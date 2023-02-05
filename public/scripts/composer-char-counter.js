@@ -9,7 +9,7 @@ $(document).ready(function () {
     if (countLimit < 0) {
       $(".counter").css("color", "red");
     } else {
-      $(".counter").css("color", "black"); ß
+      $(".counter").css("color", "black");
     }
   })
 });
