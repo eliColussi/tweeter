@@ -21,7 +21,6 @@
 }
 
 .new-tweet {
-  /* background: yellow; */
   padding: 5px 0;
 }
 
@@ -40,7 +39,9 @@
 
 .new-tweet form textarea {
   border: none;
+  background-color: #f4f1ec;
   border-bottom: 2px solid black;
+  margin-bottom: 10px;
 }
 
 .button-counter {
