@@ -38,3 +38,23 @@ main {
   background-color: #f4f1ec;
   color: #545149;
 }
+
+
+/*media queries*/
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    width: 50%;
+    margin-top: 130px;
+  }
+
+  .head1 {
+    flex-direction: row;
+  }
+
+  .tweet-body {
+    width: 50%;
+    margin-top: 150px;
+    height: auto;
+  }
+}
