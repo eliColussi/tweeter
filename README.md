@@ -16,3 +16,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+
+## screenshots
+
+!["screenshot of tweet feed with the text box to compose tweet"](https://github.com/eliColussi/tweeter/blob/master/public/images/Screen%20Shot%202023-02-05%20at%202.43.09%20AM.png?raw=true)
+!["screenshot of error message when no text has been input"](https://github.com/eliColussi/tweeter/blob/master/public/images/Screen%20Shot%202023-02-05%20at%202.44.04%20AM.png?raw=true)
