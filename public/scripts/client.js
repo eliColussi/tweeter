@@ -14,18 +14,7 @@ $(document).ready(function () {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-  // function to turn unix time stamp into time since
 
-  // function formatDaysAgo(timestamp) {
-  //   const now = Date.now();
-  //   const diff = now - timestamp;
-  //   const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-  //   if (days > 1) {
-  //     return `${days} day ago`;
-  //   } else {
-  //     return `1 day ago`;
-  //   }
-  // }
   //tweet object to append to tweet-container
   const createTweetElement = function (tweetData) {
     const tweetDate = timeago.format(tweetData.created_at);
