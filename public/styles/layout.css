@@ -42,19 +42,29 @@ main {
 
 /*media queries*/
 
-@media only screen and (min-width: 1024px) {
-  .header {
-    width: 50%;
-    margin-top: 130px;
+@media only screen and (min-width: 1204px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "nav nav" "head  main";
   }
 
-  .head1 {
-    flex-direction: row;
+  body nav {
+    grid-area: nav;
+    z-index: 1;
   }
 
-  .tweet-body {
-    width: 50%;
-    margin-top: 150px;
-    height: auto;
+  body header.head1 {
+    grid-area: head;
+  }
+
+  body main {
+    grid-area: main;
+  }
+
+  body header.head1,
+  body main {
+    position: relative;
+    top: 120px;
   }
 }
