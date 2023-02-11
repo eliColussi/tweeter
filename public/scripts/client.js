@@ -51,12 +51,14 @@ $(document).ready(function () {
 
   // loops through the tweets and appends to tweet container
   const renderTweets = function (tweets) {
+    $(".tweet-container").empty()
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $(".tweet-container").prepend($tweet);
     }
   };
-  // takes tweets from database and posts on the page
+
+  //takes tweets from database and posts on the page
   const loadTweets = () => {
     $.ajax("/tweets/", {
       dataType: "JSON",
@@ -81,8 +83,8 @@ $(document).ready(function () {
     } else {
       $(".error-msg").slideUp('slow');
       $(".error-msg2").slideUp('slow');
-      const formData = $(this).serialize();
 
+      const formData = $(this).serialize();
       $.ajax({
         url: "/tweets/",
         type: "POST",
@@ -90,7 +92,11 @@ $(document).ready(function () {
       })
         .then(loadTweets());
       $("#tweet-text").val("");
+      $(".counter").text(140);
 
     };
+
   })
+
+  loadTweets();
 });
